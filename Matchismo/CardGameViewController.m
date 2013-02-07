@@ -24,7 +24,7 @@
 
 - (IBAction)flipCard:(UIButton *)sender {
     PlayingCard *card = (PlayingCard *)[self.deck drawRandomCard];
-    NSLog(@"Your card: %@", card.contents);
+    NSLog(@"Your draw: %@", card.contents);
     [sender setTitle:card.contents forState:UIControlStateSelected];
     sender.selected = !sender.isSelected;
     self.flipCount++;
