@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E74FD9BB16C5519C007C533E /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = E74FD9BA16C5519C007C533E /* CardMatchingGame.m */; };
 		E7C1EA3D16C3C094000BB491 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C1EA3C16C3C094000BB491 /* UIKit.framework */; };
 		E7C1EA3F16C3C094000BB491 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C1EA3E16C3C094000BB491 /* Foundation.framework */; };
 		E7C1EA4116C3C094000BB491 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C1EA4016C3C094000BB491 /* CoreGraphics.framework */; };
@@ -22,9 +23,12 @@
 		E7C1EA6516C3CE54000BB491 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C1EA6416C3CE54000BB491 /* Deck.m */; };
 		E7C1EA6816C3CE73000BB491 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C1EA6716C3CE73000BB491 /* PlayingCard.m */; };
 		E7C1EA6B16C3CE88000BB491 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C1EA6A16C3CE88000BB491 /* PlayingCardDeck.m */; };
+		E7C7D41116CB9AF20095050A /* euchre_card_back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E7C7D41016CB9AF20095050A /* euchre_card_back.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E74FD9B916C5519C007C533E /* CardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardMatchingGame.h; path = Model/CardMatchingGame.h; sourceTree = "<group>"; };
+		E74FD9BA16C5519C007C533E /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardMatchingGame.m; path = Model/CardMatchingGame.m; sourceTree = "<group>"; };
 		E7C1EA3916C3C094000BB491 /* Matchismo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Matchismo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7C1EA3C16C3C094000BB491 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E7C1EA3E16C3C094000BB491 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -49,6 +53,7 @@
 		E7C1EA6716C3CE73000BB491 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
 		E7C1EA6916C3CE88000BB491 /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardDeck.h; sourceTree = "<group>"; };
 		E7C1EA6A16C3CE88000BB491 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
+		E7C7D41016CB9AF20095050A /* euchre_card_back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = euchre_card_back.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +100,7 @@
 		E7C1EA4216C3C094000BB491 /* Matchismo */ = {
 			isa = PBXGroup;
 			children = (
+				E7C7D41016CB9AF20095050A /* euchre_card_back.jpg */,
 				E7C1EA6216C3CE2B000BB491 /* Model */,
 				E7C1EA5416C3C094000BB491 /* MainStoryboard.storyboard */,
 				E7C1EA5716C3C094000BB491 /* CardGameViewController.h */,
@@ -123,6 +129,8 @@
 		E7C1EA6216C3CE2B000BB491 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E74FD9B916C5519C007C533E /* CardMatchingGame.h */,
+				E74FD9BA16C5519C007C533E /* CardMatchingGame.m */,
 				E7C1EA5F16C3CE0F000BB491 /* Card.h */,
 				E7C1EA6016C3CE0F000BB491 /* Card.m */,
 				E7C1EA6316C3CE54000BB491 /* Deck.h */,
@@ -191,6 +199,7 @@
 				E7C1EA5116C3C094000BB491 /* Default@2x.png in Resources */,
 				E7C1EA5316C3C094000BB491 /* Default-568h@2x.png in Resources */,
 				E7C1EA5616C3C094000BB491 /* MainStoryboard.storyboard in Resources */,
+				E7C7D41116CB9AF20095050A /* euchre_card_back.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +217,7 @@
 				E7C1EA6516C3CE54000BB491 /* Deck.m in Sources */,
 				E7C1EA6816C3CE73000BB491 /* PlayingCard.m in Sources */,
 				E7C1EA6B16C3CE88000BB491 /* PlayingCardDeck.m in Sources */,
+				E74FD9BB16C5519C007C533E /* CardMatchingGame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +340,7 @@
 				E7C1EA5E16C3C094000BB491 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
