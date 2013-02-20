@@ -1,12 +1,13 @@
 //
 //  ViewController.h
-//  Matchismo
+//  CS193p_AttributedStrings
 //
-//  Created by Joe Cool on 2/7/13.
+//  Created by Joe Cool on 15.02.13.
 //  Copyright (c) 2013 Creative Designs. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface CardGameViewController : UIViewController
+@interface ViewController : UIViewController
+
 @end

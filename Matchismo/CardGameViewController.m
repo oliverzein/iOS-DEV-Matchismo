@@ -10,12 +10,14 @@
 #import "PlayingCard.h"
 #import "PlayingCardDeck.h"
 #import "CardMatchingGame.h"
+#import "GameResult.h"
 
 @interface CardGameViewController ()
-@property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
 @property (nonatomic) int flipCount;
-@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
 @property (strong, nonatomic) CardMatchingGame *game;
+@property (strong, nonatomic) GameResult *gameResult;
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
+@property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (weak, nonatomic) IBOutlet UILabel *flipResultLabel;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *matchMode;
@@ -23,9 +25,15 @@
 
 @implementation CardGameViewController
 
+-(GameResult *)gameResult {
+    if(!_gameResult) _gameResult = [[GameResult alloc] init];
+    return _gameResult;
+}
+
 -(void)resetGame {
     _game = nil;
     self.flipCount = 0;
+    self.gameResult = nil;
     if(self.game) {
         // new game started
         self.matchMode.enabled = YES;
@@ -87,6 +95,7 @@
     [self.game flipCardAtIndex:[self.cardButtons indexOfObject:sender]];
     self.flipCount++;
     [self updateUI];
+    self.gameResult.score = self.game.score;
 }
 
 - (IBAction)matchModeChanged:(UISegmentedControl *)sender {
